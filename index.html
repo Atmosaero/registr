@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Registration</title>
+</head>
+<body>
+<main>
+    <form method="post" oninput="">
+        <h1>Регистрация</h1>
+        <div class="login-input">
+            <label for="login">Ваш логин(email)</label>
+            <input type="email" id="login" name="login" value="">
+        </div>
+        
+        <div class="password-input">
+          <label for="password">Пароль</label>
+          <input type="password" value="" id="password" name="password">
+        </div>
+        <div class="text">
+          <label for="month">Информация о себе</label>
+          <textarea value="" id="text" name="text" placeholder="Лукашенко Андрей"></textarea> 
+        </div>
+        <div class="subscribe-box">
+            <label for="subscribe">Подписаться на рассылку</label>
+            <input type="checkbox" name="checkbox" id="checkbox" value="">
+        </div>
+        <div class="button">
+            <input id="button" type="submit" name="button" value="Зарегистрироваться">
+        </div>
+      </form>
+</main>
+</body>
+</html>
