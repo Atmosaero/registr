@@ -9,27 +9,44 @@
 </head>
 <body>
 <main>
-    <form method="post" oninput="">
-        <h1>Регистрация</h1>
-        <div class="login-input">
-            <label for="login">Ваш логин(email)</label>
-            <input type="email" id="login" name="login" value="">
+    <form>
+        <h1>Лукашенко Андрей</h1>
+        <div>
+          <input type="radio" id="male"
+           name="male" value="male">
+          <label for="maleChoice">Мужской</label>
+          <input type="radio" id="female"
+           name="female" value="female" checked>
+          <label for="femaleChoice">Женский</label>
         </div>
-        
-        <div class="password-input">
-          <label for="password">Пароль</label>
-          <input type="password" value="" id="password" name="password">
+        <div>
+        <div>
+        <label for="start">Месяц и год рождения:</label>
+      </div>
+        <select>
+          <option value="month">Январь</option>
+        </select>
+        <select>
+          <option value="years">1990</option>
+        </select>
         </div>
-        <div class="text">
-          <label for="month">Информация о себе</label>
-          <textarea value="" id="text" name="text" placeholder="Лукашенко Андрей"></textarea> 
+        <div>
+          <div>
+          <label for="tech">Знакомые технологии:</label>
         </div>
-        <div class="subscribe-box">
-            <label for="subscribe">Подписаться на рассылку</label>
-            <input type="checkbox" name="checkbox" id="checkbox" value="">
+          <select size="4" name="lang">
+            <option value="lang1">HTML</option>
+            <option value="lang2" selected>CSS</option>
+            <option value="lang3">JavaScript</option>
+            <option value="lang4">Node.js</option>
+          </select>
         </div>
-        <div class="button">
-            <input id="button" type="submit" name="button" value="Зарегистрироваться">
+        <div>
+          <label for="file">Фото:</label>
+          <input type="file" id="file" name="file" multiple>
+        </div>
+        <div>
+          <input type="submit" name="save" id="save" value="Сохранить">
         </div>
       </form>
 </main>
